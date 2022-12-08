@@ -9,7 +9,7 @@ const port = 3000
 app.use(morgan('combined'))
 // using express-handlebars
 app.engine('hbs', engine({
-  extname: 'hbs'
+  extname: 'hbs' // change .handlebars to .hbs (main.hbs)
 }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views')) // set local file
