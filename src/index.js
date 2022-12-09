@@ -1,10 +1,12 @@
-const express = require('express') 
+const express = require('express')
 const path = require('path') // import path
 const morgan = require('morgan') // import morgan 
-const {engine} = require('express-handlebars') // import express-handlebars
+const { engine } = require('express-handlebars') // import express-handlebars
 
 const app = express()
 const port = 3000
+
+app.use(express.static(path.join(__dirname, 'public'))) // static img
 // using morgan
 app.use(morgan('combined'))
 // using express-handlebars
