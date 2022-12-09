@@ -6,6 +6,8 @@ const { engine } = require('express-handlebars') // import express-handlebars
 const app = express()
 const port = 3000
 
+
+// console.log(result.css);
 app.use(express.static(path.join(__dirname, 'public'))) // static img
 // using morgan
 app.use(morgan('combined'))
